@@ -1,0 +1,11 @@
+<div class="flex space-x-4 justify-center overflow-x-auto p-4">
+  <app-example-card
+    *ngFor="let card of cards; let i = index"
+    [title]="card.title"
+    [description]="card.description"
+    class="flex-shrink-0 w-64 animate-flyInRight"
+    [ngClass]="{'delay-200': i === 1, 'delay-400': i === 2, 'delay-600': i === 3}"
+  ></app-example-card>
+</div>
+
+
