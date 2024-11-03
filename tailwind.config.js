@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/app/components/navbar/navbar.component.html',
-    './src/app/components/card/card.component.*',
-    './src/app/components/card-list/card-list.component.*',
+    './src/app/components/**/*.{html,ts}',
     './src/app/app.component.html',
   ],
   theme: {

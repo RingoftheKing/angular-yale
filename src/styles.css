@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  background-image: url('./app/images/yale-school.jpg');
+  background-image: url('assets/images/yale-school.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,0 +1,6 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 69px; /* Default height, overridden by the component input */
+  background-color: transparent;
+}

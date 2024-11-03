@@ -1,0 +1,18 @@
+<div class="carousel-container" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+<!--  title-->
+  <h2 class="carousel-title">Gallery</h2>
+  <div class="carousel-images" [style.transform]="transform">
+    <img *ngFor="let image of images; let i = index" [src]="image" [alt]="'Image ' + (i + 1)" />
+  </div>
+  <button class="carousel-button left" (click)="previous()">❮</button>
+  <button class="carousel-button right" (click)="next()">❯</button>
+</div>
+<div class="carousel-indicators">
+  <span
+    *ngFor="let image of images; let i = index"
+    class="indicator-dot"
+    [class.active]="i === currentIndex"
+    (click)="goToSlide(i)">
+    </span>
+</div>
+
